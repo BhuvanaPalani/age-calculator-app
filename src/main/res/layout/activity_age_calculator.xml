@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A3B3C"
+    tools:context=".AgeCalculatorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/age_calculator"
+            android:textSize="36sp"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="48dp" />
+
+        <EditText
+            android:id="@+id/editTextYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/year_of_birth"
+            android:inputType="number"
+            android:textColorHint="@color/light_grey"
+            android:textColor="@color/white"
+            android:layout_marginTop="64dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/editTextMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/month_of_birth"
+            android:inputType="number"
+            android:textColorHint="@color/light_grey"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/textViewLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_age_in"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="64dp"
+            android:layout_gravity="center_horizontal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textSize="48sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textViewYearsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/years"
+                android:textSize="18sp"
+                android:textColor="@color/orange"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/medium_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewMonths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textSize="48sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textViewMonthsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/months"
+                android:textSize="18sp"
+                android:textColor="@color/orange"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/medium_grey" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewWeeks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textSize="48sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textViewWeeksLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weeks"
+                android:textSize="18sp"
+                android:textColor="@color/orange"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/medium_grey" />
+
+        <!-- DAYS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="64dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textViewDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_0"
+                android:textSize="48sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textViewDaysLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/days"
+                android:textSize="18sp"
+                android:textColor="@color/orange"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/medium_grey" />
+
+    </LinearLayout>
+</ScrollView>
